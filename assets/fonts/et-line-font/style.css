@@ -341,3 +341,27 @@ you can use the generic selector below, but it's slower:
 .icon-dribbble:before {
 	content: "\e063";
 }
+.icon-twitter-with-circle:before {
+	content: "\e906";
+}
+.icon-facebook-with-circle:before {
+	content: "\e904";
+}
+.icon-github:before {
+	content: "\e905";
+}
+.icon-github:before {
+	content: "\e905";
+}
+.icon-google-plus3:before {
+	content: "\ea8d";
+}
+.icon-dribbble:before {
+	content: "\eaa7";
+}
+.icon-behance:before {
+	content: "\eaa8";
+}
+.icon-github1:before {
+	content: "\eab0";
+}
