@@ -6,9 +6,23 @@
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) { 
-    .carousel-inner btn2 {
+    .carousel_tittle {
+        
+        font-size: 0.9rem !important;
+        top: 16% !important ;
+        left: 5% !important;
+        right: 5% !important;
+        text-align: left !important;
+    }
+    .carousel_tittle > p {
+        padding: 2% 0% !important;
+    }
+    .carousel-inner .btn2 {
         display: none;
     }
+    /* .w-100 {
+        width: 70rem !important;
+    } */
     #navigation-bar {
         padding: 0% 0% !important;
     }
@@ -27,6 +41,16 @@
     }
 
 }
+/* X-mid devices (tablet, less than 767px) */
+@media (min-width: 576.01px) and (max-width: 768px) {
+    .carousel_tittle {
+        top: 30% !important ;
+        font-size: 1rem !important;
+    }
+    .carousel_tittle > p {
+        padding: 2% 0% !important;
+    }
+}
 
 i.font_icons {
     font-family: icomoon;
@@ -41,9 +65,17 @@ i.font_icons_base {
 
 
 .general_padding {
-    /* is being used in services, team, about, portfolio  */
+    /* is being used in services, team, about, portfolio, blog  */
     padding: 10% 10% 10% 10%;
 
+}
+.global_description {
+    /* is being used in team, portfolio, blog, contact  */
+    text-align: center;
+}
+    
+.global_description > p {
+    padding-bottom: 3rem;
 }
 
 
@@ -60,7 +92,7 @@ i.font_icons_base {
     translate: middle;
 }
 
-.carousel_message{
+.carousel_tittle > p {
     padding: 2% 13%;
 }
 
@@ -224,21 +256,8 @@ i.font_icons_base {
 
 /* Team Section */
 
-/* #team {
-    padding: 10% 10% 10% 10%;
-} */
-
-.team_description {
-    text-align: center;
-    /* font-weight: bolder; */
-}
-
-.team_description > p {
-    padding-bottom: 3rem;
-}
-
-.card {
-    border: 1px solid transparent !important;
+#team .card {
+    border: none;
 }
 
 .row .team_gallery_item {
@@ -349,7 +368,6 @@ i.font_icons_base {
 /* text cards */
 .portfolio_gallery_text > p {
     visibility: hidden;
-    /* background-color: rgba(4, 255, 242,0.5); */
     font-size: 0.8rem;
     vertical-align: middle;
     text-align: center;
@@ -365,6 +383,46 @@ i.font_icons_base {
     background-color: rgba(86, 198, 176,0.8);
 }
 
+
+
+/* Blog Section */
+
+.blog_gallery_item .card:hover {
+    background:url("/assets/images/hover-image.jpg");
+    background-size: 100% auto;
+    overflow: hidden;
+    border: none;
+    /* animation settings */
+    background-position: 0 0;
+    background-repeat: repeat;
+    animation: blog_background_animated 5s linear infinite alternate;
+}
+
+.blog_gallery_item .card:hover h3 {
+    color: rgba(86, 198, 176,0.8);
+}
+
+.blog_gallery_text {
+    /* margin: 10% 0 10% 10%; */
+    font-size: 0.8rem;
+    vertical-align: middle;
+    text-align:left;
+    color: rgba(0, 0, 0, 0.70);
+}
+
+.blog_gallery_item {
+    padding: 1% 0;
+
+}
+
+@keyframes blog_background_animated{
+    from {
+        background-position:  0 0;
+    }
+    to {
+        background-position:  0 100%;
+    }
+}
 
 
 /* contact section */

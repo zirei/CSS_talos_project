@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,47 +10,56 @@
   <title>CSS responsive project</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <!-- scrollspy to paint the section in which we are in the navigation bar -->
+
 <body data-bs-spy="scroll" data-bs-target="#navigation-bar">
   <!-- Carousel Home -->
   <section>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/images/home-bg.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block carousel_tittle">
+          <img src="assets/images/home-bg-2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption carousel_tittle d-block">
             <h1>Genius Web & Talos Inc.</h1>
-            <p class="carousel_message">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus
-              purus auge vulputate voluptate neqe, curabitur dolor libero sodales.</p>
+            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
+              vulputate voluptate neque, curabitur dolor libero sodales.</p>
+            <div class="col-12 col-md-12 home_button_ubication">
+              <a href="#footer" class="btn1 home_button" role="button">LEARN MORE</a>
+              <a href="#contact" class="btn2 home_button" role="button">CONTACT US</a>
+            </div>
           </div>
         </div>
-        <div class="carousel-item active">
-          <img src="assets/images/home-bg-2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block carousel_tittle">
+        <div class="carousel-item">
+          <img src="assets/images/home-bg.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption carousel_tittle d-block">
             <h1>Genius Web & Talos Inc.</h1>
-            <p class="carousel_message">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus
-              purus auge vulputate voluptate neqe, curabitur dolor libero sodales.</p>
-            <div class="col-md-12 home_button_ubication">
-              <a href="#footer" class="btn1 home_button" role="button" >LEARN MORE</a>
-              <a href="#contact" class="btn2 home_button" role="button" >CONTACT US</a>
-            </div>       
+            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
+              vulputate voluptate neque, curabitur dolor libero sodales.</p>
+            <div class="col-12 col-md-12 home_button_ubication">
+              <a href="#footer" class="btn1 home_button" role="button">LEARN MORE</a>
+              <a href="#contact" class="btn2 home_button" role="button">CONTACT US</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </div>       
   </section>
   <!-- Navigation bar -->
   <section id="navigation-bar">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid navbar_margin">
-        <a class="navbar-brand" href="#"><h2>Talos</h2></a>
-        <button class="navbar-toggler mr-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+          <h2>Talos</h2>
+        </a>
+        <button class="navbar-toggler mr-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">HOME</a>
@@ -127,7 +137,7 @@
     </div>
   </section>
   <!-- about section -->
-  <section class="jumbotron jumbotron-fluid bg-light general_padding" id="about" >
+  <section class="jumbotron jumbotron-fluid bg-light general_padding" id="about">
     <div class="container-fluid">
       <div class="row about_zone">
         <div class="col-md-6 about_text">
@@ -150,12 +160,12 @@
   <!-- Teams section -->
   <section class="general_padding" id="team">
     <div class="container-fluid">
-      <div class="team_description">
+      <div class="global_description">
         <h3>team member</h3>
         <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
       </div>
       <div class="row">
-        <div class="card col-12 col-sm-4 col-md-4 team_gallery_item bg-image">
+        <div class="card col-12 col-sm-6 col-md-4 team_gallery_item bg-image">
           <div class="row plus">
             <img src="/assets/images/team_1.jpg " class="img-fluid" alt="team image 3" />
             <div class="overlay card-text team_logo">
@@ -170,7 +180,7 @@
             <p> Designer</p>
           </div>
         </div>
-        <div class="card col-12 col-sm-4 col-md-4 team_gallery_item">
+        <div class="card col-12 col-sm-6 col-md-4 team_gallery_item">
           <div class="row plus">
             <img src="/assets/images/team_2.jpg" class="img-fluid" alt="team image 3" />
             <div class="overlay card-text team_logo">
@@ -185,7 +195,7 @@
             <p> UX Designer</p>
           </div>
         </div>
-        <div class="card col-12 col-sm-4 col-md-4 team_gallery_item">
+        <div class="card col-12 col-sm-6 col-md-4 team_gallery_item">
           <div class="row plus">
             <img src="/assets/images/team_3.jpg" class="img-fluid" alt="team image 3" />
             <div class="overlay card-text team_logo">
@@ -204,13 +214,13 @@
     </div>
   </section>
   <!-- Portfolio Section -->
-  <section class="jumbotron jumbotron-fluid bg-light general_padding" id="portfolio" >
+  <section class="jumbotron jumbotron-fluid bg-light general_padding" id="portfolio">
     <div class="container-fluid">
-      <div class="team_description">
+      <div class="global_description">
         <h2>Latest Work</h2>
         <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
       </div>
-      <div class="portfolio_gallery" >
+      <div class="portfolio_gallery">
         <div class="row">
           <div class="col-12 col-sm-6 col-md-4 portfolio_gallery_item">
             <!-- use card to add text inside images -->
@@ -289,13 +299,57 @@
       </div>
     </div>
   </section>
-  <section id="blog">
-     <p>blog</p>
+  <!-- Blog Section -->
+  <section class="general_padding" id="blog">
+    <div class="container-fluid">
+      <div class="global_description">
+        <h1>Our Blog</h1>
+        <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 blog_gallery_item">
+          <div class="card">
+            <div class="card-body blog_gallery_text">
+              <p class="card-text">Online Business / Dec 9,2016</p>
+              <h3 class="card-title">The best way to make Online Business</h3>
+              <p class="card-text">by johnathan Doe</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 blog_gallery_item">
+          <div class="card">
+            <div class="card-body blog_gallery_text">
+              <p class="card-text">Frontend Dev / Dec 9,2016</p>
+              <h3 class="card-title">Frontend Developer Vs UI Designer</h3>
+              <p class="card-text">by Johnny James</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 blog_gallery_item">
+          <div class="card">
+            <div class="card-body blog_gallery_text">
+              <p class="card-text">Social Marketing / Dec 9,2016</p>
+              <h3 class="card-title">What is Social Marketing Business</h3>
+              <p class="card-text">by Marry Louis</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 blog_gallery_item">
+          <div class="card">
+            <div class="card-body blog_gallery_text">
+              <p class="card-text">Web Design / Dec 9,2016</p>
+              <h3 class="card-title">How to become Web Designer</h3>
+              <p class="card-text">by David Jenn</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- Contact section -->
   <section class="jumbotron jumbotron-fluid bg-light general_padding" id="contact">
     <div class="container-fluid contact_margin">
-      <div class="team_description">
+      <div class="global_description">
         <h2>Get in touch</h2>
         <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
       </div>
@@ -321,8 +375,8 @@
         <button type="submit" class="btn btn-success btn-xs contact_button_color"></button>
       </div> -->
       <div class="col-md-12 contact_button_ubication">
-        <a href="#" class="contact_button contact_button_color" >SHOOT MESSAGE</a>
-      </div>       
+        <a href="#" class="contact_button contact_button_color">SHOOT MESSAGE</a>
+      </div>
     </div>
   </section>
   <!-- Footer section -->
@@ -334,17 +388,21 @@
       <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6 footer_logo">
-            <i class="font_icons icon-facebook-with-circle"></i>
-            <i class="font_icons icon-twitter-with-circle"></i>
-            <div class="font_icons footer_logo_icon footer_logo_container"><i class="icon-dribbble"></i></div>
-            <div class="font_icons  footer_logo_icon footer_logo_container"><i class="icon-behance"></i></div>
-            <i class="font_icons icon-github"></i>
-            <i class="font_icons icon-google-plus3"></i>
+          <i class="font_icons icon-facebook-with-circle"></i>
+          <i class="font_icons icon-twitter-with-circle"></i>
+          <div class="font_icons footer_logo_icon footer_logo_container"><i class="icon-dribbble"></i></div>
+          <div class="font_icons  footer_logo_icon footer_logo_container"><i class="icon-behance"></i></div>
+          <i class="font_icons icon-github"></i>
+          <i class="font_icons icon-google-plus3"></i>
         </div>
         <div class="col-md-3"></div>
       </div>
     </div>
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <!-- Javascript for bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
