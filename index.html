@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- import font styles -->
   <link rel="stylesheet" href="assets/fonts/et-line-font/style.css">
   <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
   <title>CSS responsive project</title>
@@ -10,7 +11,8 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
-<body>
+<!-- scrollspy to paint the section in which we are in the navigation bar -->
+<body data-bs-spy="scroll" data-bs-target="#navigation-bar">
   <!-- Carousel Home -->
   <section>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -30,8 +32,8 @@
             <p class="carousel_message">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus
               purus auge vulputate voluptate neqe, curabitur dolor libero sodales.</p>
             <div class="col-md-12 home_button_ubication">
-              <a href="#footer" class="home_button" >LEARN MORE</a>
-              <a href="#contact" class="home_button" >CONTACT US</a>
+              <a href="#footer" class="btn1 home_button" role="button" >LEARN MORE</a>
+              <a href="#contact" class="btn2 home_button" role="button" >CONTACT US</a>
             </div>       
           </div>
         </div>
@@ -76,48 +78,47 @@
     </nav>
   </section>
   <!-- Section services -->
-  <section id="services">
+  <section class="general_padding" id="services">
     <!-- creating container -->
     <div class="container-fluid services_articles">
       <h1>What we do</h1>
       <p> Lorem ipsum dolor sit amet, maecenas eget vesibulum justo imperdiet</p>
       <br>
       <div class="row">
-        <div class="col-md-1 service_logo">
+        <div class="col-2 col-md-1 service_logo">
           <!-- <img src="/assets/images/logo_pc.png" alt="Logo_brand"> -->
           <i class="font_icons_base icon-laptop"></i>
         </div>
-        <article class="col-md-5  services_articles_text ">
+        <article class="col-10 col-md-5  services_articles_text ">
           <h3>Brand Identity</h3>
           <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus
             purus auge vulputate voluptate neqe, curabitur dolor libero sodales vitae elit massa.</p>
         </article>
-        <div class="col-md-1 service_logo">
+        <div class="col-2 col-md-1 service_logo">
           <!-- <img src="/assets/images/logo_desing.png" alt="logo_design"> -->
           <i class="font_icons_base icon-focus"></i>
         </div>
-        <article class="col-md-5 services_articles_text">
+        <article class="col-10 col-md-5 services_articles_text">
           <h3>Web Design</h3>
           <p>You can easily change icons by looking at <b>ET Line Icons</b>, wisi risus
             purus auge vulputate voluptate neqe, curabitur dolor libero sodales vitae elit massa.</p>
         </article>
       </div>
-
       <div class="row">
-        <div class="col-md-1 service_logo">
+        <div class="col-2 col-md-1 service_logo">
           <!-- <img src="/assets/images/logo_pc.png" alt="Logo_brand"> -->
           <i class="font_icons_base icon-cloud"></i>
         </div>
-        <article class="col-md-5 services_articles_text ">
+        <article class="col-10 col-md-5 services_articles_text ">
           <h3>Social Marketing</h3>
           <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus
             purus auge vulputate voluptate neqe, curabitur dolor libero sodales vitae elit massa.</p>
         </article>
-        <div class="col-md-1 service_logo">
+        <div class="col-2 col-md-1 service_logo">
           <!-- <img src="/assets/images/logo_desing.png" alt="logo_design"> -->
           <i class="font_icons_base icon-basket"></i>
         </div>
-        <article class="col-md-5 services_articles_text">
+        <article class="col-10 col-md-5 services_articles_text">
           <h3>CMS & eCommerce</h3>
           <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus
             purus auge vulputate voluptate neqe, curabitur dolor libero sodales vitae elit massa.</p>
@@ -126,7 +127,7 @@
     </div>
   </section>
   <!-- about section -->
-  <section class="jumbotron jumbotron-fluid bg-light" id="about" >
+  <section class="jumbotron jumbotron-fluid bg-light general_padding" id="about" >
     <div class="container-fluid">
       <div class="row about_zone">
         <div class="col-md-6 about_text">
@@ -147,18 +148,21 @@
     </div>
   </section>
   <!-- Teams section -->
-  <section id="team">
+  <section class="general_padding" id="team">
     <div class="container-fluid">
       <div class="team_description">
         <h3>team member</h3>
         <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
       </div>
       <div class="row">
-        <div class="card col-12 col-sm-4 col-md-4 team_gallery_item">
-          <img src="/assets/images/team_1.jpg " class="img-fluid" alt="team image 3" />
-          <div class="card-img-overlay team_gallery_inside_text team_mask">
-            <div class="team_circle_container">
-              <div class="team_icon_container"><i class="font_icons_base card-text icon-attachment"></i></div>
+        <div class="card col-12 col-sm-4 col-md-4 team_gallery_item bg-image">
+          <div class="row plus">
+            <img src="/assets/images/team_1.jpg " class="img-fluid" alt="team image 3" />
+            <div class="overlay card-text team_logo">
+              <i class="font_icons icon-facebook-with-circle"></i>
+              <i class="font_icons icon-twitter-with-circle"></i>
+              <div class="font_icons footer_logo_icon footer_logo_container"><i class="icon-dribbble"></i></div>
+              <div class="font_icons  footer_logo_icon footer_logo_container"><i class="icon-behance"></i></div>
             </div>
           </div>
           <div class="team_gallery_text">
@@ -166,15 +170,31 @@
             <p> Designer</p>
           </div>
         </div>
-        <div class="col-12 col-sm-4 col-md-4 team_gallery_item">
-          <img src="/assets/images/team_2.jpg" class="img-fluid" alt="team image 3" />
+        <div class="card col-12 col-sm-4 col-md-4 team_gallery_item">
+          <div class="row plus">
+            <img src="/assets/images/team_2.jpg" class="img-fluid" alt="team image 3" />
+            <div class="overlay card-text team_logo">
+              <i class="font_icons icon-facebook-with-circle"></i>
+              <i class="font_icons icon-twitter-with-circle"></i>
+              <div class="font_icons footer_logo_icon footer_logo_container"><i class="icon-dribbble"></i></div>
+              <div class="font_icons  footer_logo_icon footer_logo_container"><i class="icon-behance"></i></div>
+            </div>
+          </div>
           <div class="team_gallery_text">
             <h5>Jenny L Martian</h5>
             <p> UX Designer</p>
           </div>
         </div>
-        <div class="col-12 col-sm-4 col-md-4 team_gallery_item">
-          <img src="/assets/images/team_3.jpg" class="img-fluid" alt="team image 3" />
+        <div class="card col-12 col-sm-4 col-md-4 team_gallery_item">
+          <div class="row plus">
+            <img src="/assets/images/team_3.jpg" class="img-fluid" alt="team image 3" />
+            <div class="overlay card-text team_logo">
+              <i class="font_icons icon-facebook-with-circle"></i>
+              <i class="font_icons icon-twitter-with-circle"></i>
+              <div class="font_icons footer_logo_icon footer_logo_container"><i class="icon-dribbble"></i></div>
+              <div class="font_icons  footer_logo_icon footer_logo_container"><i class="icon-behance"></i></div>
+            </div>
+          </div>
           <div class="team_gallery_text">
             <h5>James David Doe</h5>
             <p>Creative Director</p>
@@ -184,7 +204,7 @@
     </div>
   </section>
   <!-- Portfolio Section -->
-  <section class="jumbotron jumbotron-fluid bg-light" id="portfolio" >
+  <section class="jumbotron jumbotron-fluid bg-light general_padding" id="portfolio" >
     <div class="container-fluid">
       <div class="team_description">
         <h2>Latest Work</h2>
@@ -192,7 +212,7 @@
       </div>
       <div class="portfolio_gallery" >
         <div class="row">
-          <div class="col-12 col-sm-4 col-md-4 portfolio_gallery_item">
+          <div class="col-12 col-sm-6 col-md-4 portfolio_gallery_item">
             <!-- use card to add text inside images -->
             <div class="card bg-light text-white bg-image">
               <img src="/assets/images/portfolio-img1.jpg" class="img-fluid" alt="portfolio image 1" />
@@ -205,7 +225,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-4 col-md-4 portfolio_gallery_item">
+          <div class="col-12 col-sm-6 col-md-4 portfolio_gallery_item">
             <div class="card bg-light text-white bg-image">
               <img src="/assets/images/portfolio-img2.jpg" class="img-fluid" alt="portfolio image 2" />
               <div class="card-img-overlay portfolio_gallery_text gallery_mask">
@@ -217,7 +237,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-4 col-md-4 portfolio_gallery_item">
+          <div class="col-12 col-sm-6 col-md-4 portfolio_gallery_item">
             <div class="card bg-light text-white bg-image">
               <img src="/assets/images/portfolio-img3.jpg" class="img-fluid" alt="portfolio image 3" />
               <div class="card-img-overlay portfolio_gallery_text gallery_mask">
@@ -229,9 +249,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-4 col-md-4 portfolio_gallery_item">
+          <div class="col-12 col-sm-6 col-md-4 portfolio_gallery_item">
             <div class="card bg-light text-white bg-image">
               <img src="/assets/images/portfolio-img4.jpg" class="img-fluid" alt="portfolio image 4" />
               <div class="card-img-overlay portfolio_gallery_text gallery_mask">
@@ -243,7 +261,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-4 col-md-4 portfolio_gallery_item">
+          <div class="col-12 col-sm-6 col-md-4 portfolio_gallery_item">
             <div class="card bg-light text-white bg-image">
               <img src="/assets/images/portfolio-img5.jpg" class="img-fluid" alt="portfolio image 5" />
               <div class="card-img-overlay portfolio_gallery_text gallery_mask">
@@ -255,7 +273,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-4 col-md-4 portfolio_gallery_item">
+          <div class="col-12 col-sm-6 col-md-4 portfolio_gallery_item">
             <div class="card bg-light text-white bg-image">
               <img src="/assets/images/portfolio-img6.jpg" class="img-fluid" alt="portfolio image 6" />
               <div class="card-img-overlay portfolio_gallery_text gallery_mask">
@@ -275,7 +293,7 @@
      <p>blog</p>
   </section>
   <!-- Contact section -->
-  <section class="jumbotron jumbotron-fluid bg-light" id="contact">
+  <section class="jumbotron jumbotron-fluid bg-light general_padding" id="contact">
     <div class="container-fluid contact_margin">
       <div class="team_description">
         <h2>Get in touch</h2>
