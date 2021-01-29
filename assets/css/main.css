@@ -1,7 +1,6 @@
 /* media especififaction and font */
-
 * {
-    font-family: et-line;
+    font-family: 'et-line', sans-serif;
 }
 
 i.font_icons {
@@ -11,6 +10,11 @@ i.font_icons {
 i.font_icons_base {
     font-family: et-line;
 }
+/* to refresh the navigation bar using javascript */
+body {
+    position: relative;
+}
+
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) { 
@@ -112,9 +116,19 @@ i.font_icons_base {
     padding-bottom: 3rem;
     color: rgba(0, 0, 0, 0.70);
 }
+
 .specific_padding {
     /* is being used in testimonial */
     margin-bottom: 5%;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' %3e%3cpath stroke='rgba(125, 196, 148, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; 
+}
+
+.navbar-light .navbar-toggler {
+    color:  rgb(125, 196, 148) !important;
+    border-color: rgba(0,0,0,0) !important;
 }
 
 
