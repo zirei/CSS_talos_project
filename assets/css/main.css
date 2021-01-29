@@ -50,6 +50,9 @@
     .carousel_tittle > p {
         padding: 2% 0% !important;
     }
+    .testimonial_text {
+        font-size: 0.8rem !important;
+    }
 }
 
 i.font_icons {
@@ -286,17 +289,17 @@ i.font_icons_base {
     text-align: center;
   }
   
-  .plus:hover .overlay {
+.plus:hover .overlay {
     opacity: 1;
     transition-delay: 0.33s;
-  }
+}
 
-  .team_logo i{
+.team_logo i{
     display: inline-block;
     text-align: center;
     font-size: 2rem;
     margin: auto;
-  }
+}
 
 
 
@@ -464,6 +467,63 @@ i.font_icons_base {
         color: rgba(86, 198, 176,0.8); } /** to color **/
 }
 
+
+
+/* questions section  */
+
+.accordion-item {
+    margin-bottom: 1%;
+}
+div .accordion-collapse{
+    padding-bottom: 5%;
+}
+
+.accordion-item i {
+    display: inline-block;
+    vertical-align: top;   
+    text-align: justify;
+    padding: 0% 1%;
+}
+
+.accordion-item p {
+    display: inline-block;
+    vertical-align: top;   
+    text-align: justify;
+    padding: 0% 1%;
+    margin-left: 3%;
+}
+
+
+
+/* questions section  */
+
+#testimonial .container-fluid {
+    padding: 0%;
+    display: inline-block;
+}
+#testimonial .card {
+    border: none;
+}
+
+.col-9 .col-sm-4 .col-md-5 .testimonial_text {
+    padding: 0;
+}
+
+#testimonial .card-body {
+    display: inline-block;
+}
+
+.card .testimonial_images {
+    vertical-align: top;
+    width: 5.5rem; 
+}
+
+.testimonial_text {
+    vertical-align: middle;   
+    text-align: left;
+    padding-top: 1%;
+    font-size: 0.9rem;
+}
 
 
 /* Footer section */
